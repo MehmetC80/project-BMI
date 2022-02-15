@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="tutorial" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Mehmet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d9bb7233ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script defer src="index.js"></script>
+    <title>BMI-Calculator</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <img id="bildBG" src="./bg.jpg" alt="" />
+      </div>
+    </div>
+    <h1>BMI-Rechner</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <label for="email" class="visually-hidden">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="email"
+            oninput="check()"
+          />
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword2"
+            placeholder="Password"
+          />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Login</button>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <label for="gender" class="visually-hidden"
+          >Wähle dein gechlecht:</label
+        >
+        <div class="col-auto">
+          <select name="gender" id="gender">
+            <option>Geschlecht</option>
+            <option value="men">männlich</option>
+            <option value="women">weiblich</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="col-lg-3 col-md-3 mt-5 mb-3">
+            <label for="age" class="visually-hidden">Alter</label>
+            <input
+              type="text"
+              id="age"
+              name="age"
+              class="form-control"
+              placeholder="Alter"
+            />
+          </div>
+
+          <div class="col-lg-3 col-md-3 mb-3">
+            <label for="gewicht" class="form-label">Gewicht</label>
+            <i class="fa-solid fa-weight-scale"></i>
+            <input
+              type="text"
+              id="gewicht"
+              name="gewicht"
+              class="form-control"
+              placeholder="Gewicht in KG"
+            />
+          </div>
+
+          <div class="col-lg-3 col-md-3 mb-3">
+            <label for="groesse">Größe</label>
+            <input
+              type="text"
+              id="groesse"
+              name="groesse"
+              class="form-control"
+              placeholder="Größe in Metern"
+            />
+          </div>
+
+          <button onclick="result()" class="btn btn-primary">Berechen</button>
+          <button type="reset" class="btn btn-primary ms-3">Reset</button>
+          <div class="col-lg-2 col-md-3 mb-3">
+            <label for="bmi" class="form-label">BMI-Wert</label>
+            <input type="text" id="bmi" class="form-control" />
+          </div>
+          <div class="col-lg-2 col-md-3 mb-3">
+            <button onclick="addList()" class="btn btn-primary">
+              Speichern
+            </button>
+          </div>
+        </div>
+        <div class="col-4">
+          <table id="bmiList">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Dein BMI</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="col-4">
+          <table>
+            <thead>
+              <tr>
+                <th>Alter</th>
+                <th>BMI Mann</th>
+                <th>BMI Frau</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="green">19 - 24</td>
+                <td class="green">19 - 24</td>
+                <td class="green">18 - 23</td>
+              </tr>
+              <tr>
+                <td>25 - 34</td>
+                <td>20 - 25</td>
+                <td>19 - 24</td>
+              </tr>
+              <tr>
+                <td>35 - 44</td>
+                <td>21 - 26</td>
+                <td>20 - 25</td>
+              </tr>
+
+              <tr>
+                <td>45 - 54</td>
+                <td>22 - 27</td>
+                <td>21 - 26</td>
+              </tr>
+
+              <tr>
+                <td>55 - 64</td>
+                <td>23 - 28</td>
+                <td>22 - 27</td>
+              </tr>
+              <tr>
+                <td>>64</td>
+                <td>24 - 29</td>
+                <td>24 - 29</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
