@@ -65,6 +65,34 @@ label {
   font-size: 1.8rem;
 }
 
+.normal {
+  background-color: rgb(35, 146, 35);
+}
+.normal1 {
+  background-color: rgb(14, 83, 14);
+}
+.normal2 {
+  background-color: rgb(49, 206, 49);
+}
+
+.unter1 {
+  background-color: rgb(138, 175, 17);
+}
+.unter2 {
+  background-color: rgb(255, 225, 91);
+}
+
+.adipositas1 {
+  background-color: rgb(241, 78, 78);
+}
+.adipositas2 {
+  background-color: rgb(209, 17, 17);
+}
+
+.adipositas2 {
+  background-color: rgb(119, 18, 18);
+}
+
 /* input[id="gewicht"]::before {
   font-family: FontAwesome;
   content: "\f496";
@@ -85,18 +113,18 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 a:active {
   color: #ffffff;
   text-decoration: none;
-}
+} */
 
-tr:hover td {
+/* tr:hover td {
   background-color: var(--secondary-color);
-}
+} */
 
 tr:hover td:last-child a {
   color: whitesmoke;
