@@ -57,16 +57,23 @@ const valideEmail = (email) => {
 let test;
 
 const check = () => {
+  const emailDiv = document.querySelector("#emailDiv");
+  const pItem = document.createElement("p");
   if (document.getElementById("email").value === "") {
-    console.log("Eingabe ist leer");
+    pItem.textContent = "Eingabe ist Leer";
+    emailDiv.append(pItem);
   } else if (valideEmail(document.getElementById("email").value)) {
-    test += console.log("valide");
-    console.log(test);
+    pItem.textContent = "Email ist valide";
+    emailDiv.append(pItem);
+    pItem.classList.add("valide");
   } else {
-    test += console.log("nicht valide");
-    console.log(test);
+    pItem.textContent = "Email ist nicht valide!";
+    emailDiv.append(pItem);
+    pItem.classList.add("notValide");
   }
 };
+
+
 
 let bmi = document.getElementById("bmi");
 bmi.ononkeypress = () => {

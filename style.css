@@ -40,30 +40,29 @@ th {
   color: black;
   background-color: var(--main-color);
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 0.5rem 0.8rem;
 }
 
 td {
   font-size: 2rem;
-  text-align: center;
-}
-
-th:nth-child(1),
-th:nth-child(3) {
-  padding-right: 6rem;
-}
-
-th:nth-child(2) {
-  padding-right: 12rem;
-}
-
-td:nth-child(4) {
-  padding-right: 12rem;
-  color: var(--secondary-color);
+  padding: 0.5rem 0.8rem;
 }
 
 label {
   font-size: 1.9rem;
+}
+
+.valide {
+  padding-top: 1rem;
+  color: limegreen;
+  font-size: 1.8rem;
+}
+
+.notValide {
+  padding-top: 1rem;
+  color: rgb(205, 50, 50);
+  font-size: 1.8rem;
 }
 
 /* input[id="gewicht"]::before {

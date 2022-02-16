@@ -31,7 +31,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-4">
+        <div id="emailDiv" class="col-lg-3 col-md-4">
           <label for="email" class="visually-hidden">Email</label>
           <input
             type="text"
@@ -115,7 +115,7 @@
             </button>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-2">
           <table id="bmiList">
             <thead>
               <tr>
@@ -126,47 +126,84 @@
           </table>
         </div>
 
-        <div class="col-4">
+        <div class="col-8">
           <table>
             <thead>
               <tr>
-                <th>Alter</th>
-                <th>BMI Mann</th>
-                <th>BMI Frau</th>
+                <th></th>
+                <th>20 - 29</th>
+                <th>30 - 39</th>
+                <th>40 - 49</th>
+                <th>50 - 59</th>
+                <th>ab 60</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="green">19 - 24</td>
-                <td class="green">19 - 24</td>
-                <td class="green">18 - 23</td>
+                <td class="green">Starkes Untergewicht</td>
+                <td class="green">&#60;16</td>
+                <td class="green">&#60;17</td>
+                <td class="green">&#60;18</td>
+                <td class="green">&#60;19</td>
+                <td class="green">&#60;20</td>
               </tr>
               <tr>
-                <td>25 - 34</td>
-                <td>20 - 25</td>
-                <td>19 - 24</td>
+                <td class="green">Moderates Untergewicht</td>
+                <td class="green">16 - 17</td>
+                <td class="green">17 - 18</td>
+                <td class="green">18 - 19</td>
+                <td class="green">19 - 20</td>
+                <td class="green">20 - 21</td>
               </tr>
               <tr>
-                <td>35 - 44</td>
-                <td>21 - 26</td>
-                <td>20 - 25</td>
+                <td class="green">Leichtes Untergewicht</td>
+                <td class="green">17 - 18.5</td>
+                <td class="green">18 - 19.5</td>
+                <td class="green">19 - 20.5</td>
+                <td class="green">20 - 21.5</td>
+                <td class="green">21 - 22.5</td>
               </tr>
 
               <tr>
-                <td>45 - 54</td>
-                <td>22 - 27</td>
-                <td>21 - 26</td>
+                <td class="green">Normalgewicht</td>
+                <td class="green">18.5 - 25</td>
+                <td class="green">19.5 - 26</td>
+                <td class="green">20.5 - 27</td>
+                <td class="green">21.5 - 28</td>
+                <td class="green">22.5 - 29</td>
               </tr>
 
               <tr>
-                <td>55 - 64</td>
-                <td>23 - 28</td>
-                <td>22 - 27</td>
+                <td class="green">Beginnende Fettleibigkeit</td>
+                <td class="green">25 - 30</td>
+                <td class="green">26 - 31</td>
+                <td class="green">27 - 32</td>
+                <td class="green">28 - 33</td>
+                <td class="green">29 - 34</td>
               </tr>
               <tr>
-                <td>>64</td>
-                <td>24 - 29</td>
-                <td>24 - 29</td>
+                <td class="green">Adipositas Grad 1</td>
+                <td class="green">25 - 30</td>
+                <td class="green">26 - 31</td>
+                <td class="green">27 - 32</td>
+                <td class="green">28 - 33</td>
+                <td class="green">29 - 34</td>
+              </tr>
+              <tr>
+                <td class="green">Adipositas Grad 2</td>
+                <td class="green">35 - 40</td>
+                <td class="green">36 - 41</td>
+                <td class="green">37 - 42</td>
+                <td class="green">38 - 43</td>
+                <td class="green">39 - 44</td>
+              </tr>
+              <tr>
+                <td class="green">Adipositas Grad 3</td>
+                <td class="green">&#62;49</td>
+                <td class="green">&#62;41</td>
+                <td class="green">&#62;42</td>
+                <td class="green">&#62;43</td>
+                <td class="green">&#62;44</td>
               </tr>
             </tbody>
           </table>
